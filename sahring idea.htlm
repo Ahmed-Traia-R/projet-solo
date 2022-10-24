@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>IDEA SHARING PLATFORM RBK</title>
+  <link rel="icon" href="img/icon website.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+  
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#home">
+            <h1>SHARE YOUR IDEA !</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#home" data-after="Home">Home</a></li>
+            <li><a href="#PLATFORM" data-after="PLATFORM">YOUR <span style="color: rgb(220, 20, 183);;">IDEA !
+                  <span></a></li>
+            <li><a href="https://www.rbktunisia.com/" target="_blank">About <span style="color: rgb(220, 20, 183);;">RBK
+                  <span></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- home Section  -->
+  <section id="home">
+    <div class="home container">
+      <div>
+        <h1>Hello, </h1>
+        <h1>PLEASE FEEL FREE </h1>
+        <h1>TO SHARE YOUR IDEA ! </h1>
+        <h1>TO GIVE YOUR FEEDBACK ! </h1>
+        
+    </div>
+    </div>
+  </section>
+  
+
+  <!-- PLATFORM Section -->
+  <section id="PLATFORM">
+    <div class="PLATFORM container">
+
+      <form id="msform">
+
+
+        <h2 class="fs-title">SUBMIT YOUR <span style="color:var(--rbk) ;">IDEA !</span> </h2>
+        <h3 class="fs-subtitle" style="cursor: pointer ;">PLease fill the form below</h3>
+
+        <input id="name" type="text" placeholder="Name" />
+        <input id="emailId" type="text" name="email" placeholder="Email" />
+
+
+        <label for="subjectOption">Choose an option</label>
+        <select name="subjectOption" id="subjectOption">
+          <option value="A Feedback">A Feedback</option>
+          <option value="A new Idea">A new Idea</option>
+        </select>
+
+        <input style="height: 200px  ;" id="IdeaSubject" type="text" placeholder="Your feedack !" />
+
+        <input name="next" class="next action-button" value="Share" onclick="sendEmail()" />
+        <h2 id="hiddenThanks" class="fs-title" style="color: white ;">Thank you !</span> </h2>
+        <h2 id="alertData" class="fs-title" style="color: white ;">Alert</span> </h2>
+
+      </form>
+
+
+    </div>
+  </section>
+  <!-- End PLATFORM Section -->
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1> <span>RBK</span></h1>
+      </div>
+      <h2>Feel free to share your idea !</h2>
+
+    </div>
+  </section>
+  <!-- End Footer -->
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./javaS.js"></script>
+</body>
+
+</html>
